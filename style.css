@@ -5,7 +5,7 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color:  #7600bc;
+  background-color:  #1b9ae7;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
@@ -91,27 +91,36 @@ h2 {
 /* About Me */
 
 .about-me {
+
   display: flex;
   align-items: center;
 }
 
 #about-me h1 {
   font-size: 65px;
-  margin-top: 90px;
+  margin-top: 40px;
+  margin-right: 154px;
   color: #7600bc;
 }
 
 #about-me p {
   font-size: 25px;
   color: rgb(128, 128, 128);
-  margin-top: -1cm;
+  margin-top: 40px;
 }
 
 .profile_image {
-  width: 550px;
+width: 300px;        /* Set desired width */
+    height: 300px;       /* Set desired height */
+    object-fit: cover;   /* Ensures the picture covers the area */
+    border-radius: 50%;  /* Makes the shape perfectly round */
+    border: 30px solid #fff;  /* Optional: adds a white border */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    vertical-align: middle;
+  /*width: 550px;
   height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
+
+  margin: 5px*/;
 }
 
 /* Skills */
@@ -129,13 +138,14 @@ h2 {
   text-align: center;
   margin: 50px;
   padding: 10px;
-  width: 2in;
+  width: 1in;
+  height: 1in;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
 
 .skill img {
-  height: 35px;
+  height: 40px;
   align-items: center;
 }
 
