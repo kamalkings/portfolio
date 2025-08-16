@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <title>Kamalraj - Portfolio</title>
     <link rel="stylesheet" href="./style.css"/>
     <script src="./script.js"></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
+    <!-- Download icons here -> https://icons8.com/icons/-->
+   <!-- https://www.sukumarc.com/?i=3-->
     <nav>
+      <div>
+        <h2 class="kamalraj-name">Kamalraj</h2>
+      </div>
       <div id="home">
         <div class="profile_name">
-          Kamalraj
           <div class="contact_info">
             <img src="images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
           yakamalkings@gmail.com
@@ -21,11 +24,9 @@
           +91 9894098165
         </div>
           <div class="contact_info">
-
             <a href="https://www.linkedin.com/in/kamalkings/" target="_blank" >  </a>
             <img src="images/linkedin.png" alt="LinkedIn Profile"/>
               LinkedIn Profile
-
           </div>
 
         </div>
@@ -46,7 +47,7 @@
         <img src="images/kamalrajprofilepic.png" class="profile_image"/>
       </div>
 
-      <div>
+      <div style="margin-left: 30px;">
           <h1>
             Hi, I'm Kamalraj! <img src="images/waving-hand.png" width="60px"/>
           </h1>
@@ -65,13 +66,24 @@
     <section id="skills">
       <h2>Skills</h2>
       <div style="clear:both;"></div>
-
       <div class="all_skills">
+        <div class="skill">
+          <img src="images/java.png"/>
+          <h6>Java</h6>
+          <p>8 years experience</p>
+        </div>
+
         <div class="skill">
           <img src="images/springboot.jpg"/>
           <h6>SpringBoot</h6>
           <p>8 years experience</p>
-        </div>  
+        </div>
+
+        <div class="skill">
+          <img src="images/microservices.png"/>
+          <h6>Microservices</h6>
+          <p>3 years experience</p>
+        </div>
 
         <div class="skill">
           <img src="images/kafka2.png"/>
@@ -80,10 +92,10 @@
         </div>
         
         <div class="skill">
-            <img src="images/node.png"/>
-            <h6>Node</h6>
+            <img src="images/microservices.png"/>
+            <h6>Microservices</h6>
             <p>3 years experience</p>
-          </div>
+        </div>
 
           <div class="skill">
             <img src="images/react.png"/>
@@ -91,18 +103,58 @@
             <p>3 years experience</p>
           </div>
 
-          <div class="skill">
-            <img src="images/java.png"/>
-            <h6>JAVA</h6>
-            <p>5 years experience</p>
-          </div>
+
 
         <!-- Add more skills here -->
 
 
       </div>
     </section>
-          
+
+    <section id="work">
+      <h2>Experience</h2>
+      <div style="clear:both;"></div>
+      <div class="all_skills">
+        <div class="works">
+          <div class = "work-year">
+            <h4>2022-2025</h4>
+          </div>
+          <h6>Altimetrik</h6>
+          <p1>Senior Engineer - Product and Platform </p1>
+          <p>Worked on Citi’s STIRT desk platform, which facilitates
+            trading and risk management of short-term interest rate
+            derivatives including OIS, FX swaps, Cash and Derivative. The system supports liquidity operations, pricing models, and real-time trade execution in alignment with global
+            monetary policies.
+          </p>
+        </div>
+
+        <div class="works">
+          <div class = "work-year">
+            <h4>2020-2022</h4>
+          </div>
+          <h6>Global Logic</h6>
+          <p1>Senior Software Developer</p1>
+          <p>Worked in Event Data Management project, which
+            receives information about subscriber transactions in the
+            form of avros. This information is stored in HBase, to be
+            retrieved when a REST request is fired
+          </p>
+        </div>
+
+        <div class="works">
+          <div class = "work-year">
+            <h4>2016-2020</h4>
+          </div>
+          <h6>Infoview</h6>
+          <p1> Software Developer</p1>
+          <p>Analyzing the functional business requirements.
+            Designed and Developed application involving batch process with large user utility,
+            involving recursive DB hit operations with high speed responses (Java, Cassandra).
+          </p>
+        </div>
+
+      </div>
+    </section>
     <!-- Projects -->
     <section class="projects" id="projects">
       <h2>
@@ -112,16 +164,22 @@
 
         <div id="projects-container" class="projects-container">
           <div class="project-card">
-            <h3>  Portfolio Website</h3>
+            <h3>  STIRT - RTR</h3>
             <ul>
-              <li>Developed a personal public-facing site to showcase achievements and posts.</li>
+              <li>Planned and implemented Spring Boot microservices to handle
+                interest rate trade flows, including pricing, settlement, and risk
+                data exchange Built Kafka consumers and producers for processing
+                trade events, rate updates, and audit logs in a scalable and fault- tolerant way</li>
             </ul>
           </div>
           <hr>
           <div class="project-card">
-            <h3>Ecommerce App</h3>
+            <h3>Risk Platform</h3>
             <ul>
-              <li>Build an online store with features like product catalog, shopping cart, and payment gateway.</li>
+              <li>Achieved seamless integration using Apache Camel and Apache
+                kafka to integrate backend services in the Risk Platform, enabling
+                seamless routing and message flow. Configured Camel routes for consuming transactions, performing data transformation, and
+                handling errors efficiently</li>
             </ul>
           </div>
           <hr>
@@ -134,7 +192,7 @@
     </div>
     </section>
     <div style="clear:both;"></div>
-
+</section>-->
     <!-- Recommendations -->
     <section id="recommendations">
       <h2>Recommendations</h2>
@@ -161,12 +219,16 @@
     <!-- Recommendation Form -->
     <section id="contact">
       <div class="flex_center">
+
         <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+
           <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            <a href="images/resume.pdf" download="Kamalraj_Resume.pdf">
+              <button type="button">
+                <img src="images/resume1.png" alt="File Icon" style="width:22px; vertical-align:middle; margin-right:8px;">
+                Download My Resume
+              </button>
+            </a>
           </div>
         </fieldset>
       </div>

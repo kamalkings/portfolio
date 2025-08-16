@@ -2,15 +2,22 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.kamalraj-name {
+  color: white;      /* Change to your desired color (example: blue) */
+  font-size: 50px;     /* Change to your desired size */
+  font-weight: bold;
+    /* Optional: make text bold */
+    padding-left: 0cm;
+}
 /* Navigation Bar */
 
 #home {
-  background-color:  #1b9ae7;
+  background-color:  #7600bc;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
   margin-top:-1cm;
-  padding-top: 2cm;
+  padding-top: 3cm;
   padding-bottom: 2cm;
   height: 5mm;
  }
@@ -35,11 +42,12 @@ body {
   padding-right: 1cm;
 }
 
+
 .profile_name {
   float: left;
-  padding-left: 2cm;
+  padding-left: 3cm;
   font-size: 15px;
-   color: yellow
+   color: white;
   /* Add the styles here */
 }
 
@@ -103,6 +111,13 @@ h2 {
   color: #7600bc;
 }
 
+#about-header h1 {
+  font-size: 65px;
+  margin-top: 40px;
+  margin-right: 154px;
+  color: #7600bc;
+}
+
 #about-me p {
   font-size: 25px;
   color: rgb(128, 128, 128);
@@ -145,7 +160,8 @@ width: 300px;        /* Set desired width */
 }
 
 .skill img {
-  height: 40px;
+  height: 50px;
+  width: 90px;
   align-items: center;
 }
 
@@ -199,6 +215,95 @@ width: 300px;        /* Set desired width */
   margin-left: 30px;
 }
 
+
+.works {
+  border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 3in;
+  height: 4in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+}
+
+
+.works h6 {
+  align-items: center;
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+}
+
+.works p {
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+.work-year{
+            color: #ffffff;
+            background: #8b52ed;
+            padding: 1px 0;
+            font-size: 16px;
+            font-weight: 600;
+    }
+
+
+.strip text-center img {
+    vertical-align: middle;
+}
+
+
+.container1 {
+        width: 716px;
+        padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+    }
+    .strip {
+        margin: 15px 0 0px 0;
+    }
+}
+    .work-grid-info {
+        background: #ffffff;
+        padding: 20px 18px;
+    }
+
+.work-experience {
+    padding: 60px 0;
+    background: #eeeeee;
+}
+.work-grid h3 {
+        padding: 11px 0;
+        font-size: 16px;
+    }
+  .work-grid-info h4 {
+        font-size: 18px;
+    }
+
+        .work-grid-info p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+                line-height: 1.8em;
+                margin: 0;
+                font-size: 18px;
+                color: #888b90;
+                font-weight: 300;
+        }
+       .col-md-4 w-grid {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
 /* Recommendations */
 
 .all_recommendations {

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!-- banner -->
+<div class="banner" id="home">
+    <div class="container">
+        <div class="top-header row">
+            <script src="js/classie.js"></script>
+            <!--top-nav---->
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+            <div class="top-nav">
+                <div class="nav-icon">
+                    <a href="#" class="right_bt" id="activator"><span> </span> </a>
+                </div>
+                <div class="box" id="box" style="top: -1000px;">
+                    <div class="box_content">
+                        <div class="box_content_center">
+                            <div class="form_content">
+                                <div class="menu_box_list">
+                                    <ul>
+                                        <li><a class="scroll" href="#home"><span>home</span></a></li>
+                                        <li><a class="scroll" href="#about"><span>about</span></a></li>
+                                        <li><a class="scroll" href="#services"><span>services</span></a></li>
+                                        <!--  <li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>  -->
+                                        <li><a class="scroll" href="#testimonial"><span>Testimonial</span></a></li>
+                                        <!-- <li><a class="scroll" href="#blog"><span>blog</span></a></li> -->
+                                        <li><a class="scroll" href="#contact"><span>Contact</span></a></li>
+                                        <div class="clearfix"> </div>
+                                    </ul>
+                                </div>
+                                <a class="boxclose" id="boxclose"> <span> </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---start-click-drop-down-menu----->
+            <!----start-dropdown--->
+            <script type="text/javascript">
+                var $ = jQuery.noConflict();
+                    $(function() {
+                        $('#activator').click(function(){
+                            $('#box').animate({'top':'0px'},900);
+                        });
+                        $('#boxclose').click(function(){
+                        $('#box').animate({'top':'-1000px'},900);
+                        });
+                    });
+                    $(document).ready(function(){
+                    //Hide (Collapse) the toggle containers on load
+                    $(".toggle_container").hide();
+                    //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+                    $(".trigger").click(function(){
+                        $(this).toggleClass("active").next().slideToggle("slow");
+                            return false; //Prevent the browser jump to the link anchor
+                    });
+
+                });
+            </script>
+            <!---//End-click-drop-down-menu----->
+            <div class="clearfix"> </div>
+        </div>
+        <div class="banner-info">
+            <div class="banner-left">
+                <img src="images/kamalrajprofilepic.png" alt="">
+            </div>
+            <div class="banner-right">
+                <h1>Sukumar </h1>
+                <div class="border"></div>
+                <h2>Backend Developer</h2>
+                <a href="#">DOWNLOAD MY RESUME</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--/header-banner-->
+<!--about-->
+<div class="about text-center" id="about">
+    <div class="container">
+        <h3 class="">ABOUT ME</h3>
+        <div class="strip text-center"><img src="images/about.png" alt=" "></div>
+        <p>Having 10+ years of professional experience in design and development of Payment products, ERP products, Networking products and Mobile Applications as JAVA Developer.
+            <br>
+            I don't invent the web but I try to make it look better.
+            When I'm not designing, I'm probably hanging out with my friends.
+            playing computer games, watching movies, listening to music and chatting with friends.</p>
+        <ul>
+            <li><a target="_blank" class="fb" href="https://www.facebook.com/sukumarchandranc"></a></li>
+            <li><a target="_blank" class="twit" href="https://twitter.com/ImSukumarC"></a></li>
+            <li><a target="_blank" class="in" href="https://www.linkedin.com/in/sukumarc"></a></li>
+            <li><a target="_blank" class="drib" href="https://github.com/sukumarc"></a></li>
+            <li><a target="_blank" class="goog" href="https://plus.google.com/+SukumarChandrasekaranC"></a></li>
+            <!-- <li><a class="pin" href="#"></a></li> -->
+        </ul>
+    </div>
+</div>
+<!--//about-->
+<div class="about-back"></div>
+<!--my skill-->
+<div class="my-skills text-center">
+    <div class="container">
+        <h3>MY SKILLS</h3>
+        <div class="strip text-center"><img src="images/skill.png" alt=" "></div>
+        <div class="skill-grids">
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-1"><div class="circles-wrp" style="position:relative; display:inline-block;"><svg width="160" height="160"><path fill="transparent" stroke="#6ed4c0" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 79.89582650464463 5.000072347482458 Z"></path><path fill="transparent" stroke="#ffffff" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 35.85118044960576 19.370949765753984 "></path></svg><div class="circles-text-wrp" style="position:absolute; top:0; left:0; text-align:center; width:100%; font-size:56px; height:160px; line-height:160px;"><span class="circles-number"><span class="circles-number">90</span></span><span class="circles-text">%</span></div></div></div>
+                <p>Advanced Java</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-2"><div class="circles-wrp" style="position:relative; display:inline-block;"><svg width="160" height="160"><path fill="transparent" stroke="#6ed4c0" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 79.89582650464463 5.000072347482458 Z"></path><path fill="transparent" stroke="#ffffff" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 19.28358206351539 35.97141164013852 "></path></svg><div class="circles-text-wrp" style="position:absolute; top:0; left:0; text-align:center; width:100%; font-size:56px; height:160px; line-height:160px;"><span class="circles-number"><span class="circles-number">85</span></span><span class="circles-text">%</span></div></div></div>
+                <p>Java EE</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-3"><div class="circles-wrp" style="position:relative; display:inline-block;"><svg width="160" height="160"><path fill="transparent" stroke="#6ed4c0" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 79.89582650464463 5.000072347482458 Z"></path><path fill="transparent" stroke="#ffffff" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 19.28358206351539 35.97141164013852 "></path></svg><div class="circles-text-wrp" style="position:absolute; top:0; left:0; text-align:center; width:100%; font-size:56px; height:160px; line-height:160px;"><span class="circles-number"><span class="circles-number">85</span></span><span class="circles-text">%</span></div></div></div>
+                <p>Spring Boot</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-4"><div class="circles-wrp" style="position:relative; display:inline-block;"><svg width="160" height="160"><path fill="transparent" stroke="#6ed4c0" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 79.89582650464463 5.000072347482458 Z"></path><path fill="transparent" stroke="#ffffff" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 35.85118044960576 19.370949765753984 "></path></svg><div class="circles-text-wrp" style="position:absolute; top:0; left:0; text-align:center; width:100%; font-size:56px; height:160px; line-height:160px;"><span class="circles-number"><span class="circles-number">90</span></span><span class="circles-text">%</span></div></div></div>
+                <p>Rest Web Service</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-5"><div class="circles-wrp" style="position:relative; display:inline-block;"><svg width="160" height="160"><path fill="transparent" stroke="#6ed4c0" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 79.89582650464463 5.000072347482458 Z"></path><path fill="transparent" stroke="#ffffff" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 5.000013171435015 80.04444901663246 "></path></svg><div class="circles-text-wrp" style="position:absolute; top:0; left:0; text-align:center; width:100%; font-size:56px; height:160px; line-height:160px;"><span class="circles-number"><span class="circles-number">75</span></span><span class="circles-text">%</span></div></div></div>
+                <p>Html 5 </p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-6"><div class="circles-wrp" style="position:relative; display:inline-block;"><svg width="160" height="160"><path fill="transparent" stroke="#6ed4c0" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 79.89582650464463 5.000072347482458 Z"></path><path fill="transparent" stroke="#ffffff" stroke-width="10" d="M 79.98472450972287 5.000001555604044 A 75 75 0 1 1 5.000013171435015 80.04444901663246 "></path></svg><div class="circles-text-wrp" style="position:absolute; top:0; left:0; text-align:center; width:100%; font-size:56px; height:160px; line-height:160px;"><span class="circles-number"><span class="circles-number">75</span></span><span class="circles-text">%</span></div></div></div>
+                <p>Javascript</p>
+            </div>
+            <div class="clearfix"> </div>
+            <script type="text/javascript" src="js/circles.js"></script>
+            <script>
+                var colors = [
+                    ['#6ed4c0', '#ffffff']
+                ];
+                var child,percentage;
+                // circles-1
+                child = document.getElementById('circles-1');
+                percentage = 90;
+                circle(child.id, percentage, colors);
+                // circles-2
+                child = document.getElementById('circles-2');
+                percentage = 85;
+                circle(child.id, percentage, colors);
+                // circles-3
+                child = document.getElementById('circles-3');
+                percentage = 85;
+                circle(child.id, percentage, colors);
+                // circles-4
+                child = document.getElementById('circles-4');
+                percentage = 90;
+                circle(child.id, percentage, colors);
+                // circles-5
+                child = document.getElementById('circles-5');
+                percentage = 75;
+                circle(child.id, percentage, colors);
+                // circles-6
+                child = document.getElementById('circles-6');
+                percentage = 75;
+                circle(child.id, percentage, colors);
+
+                function circle(id, percentage,colors ){
+                    Circles.create({
+                        id:         id,
+                        percentage: percentage,
+                        radius:     80,
+                        width:      10,
+                        number:   	percentage,
+                        text:       '%',
+                        colors:     colors[0]
+                    });
+                }
+
+            </script>
+        </div>
+    </div>
+</div>
+<!--//my skill-->
+<div class="my-skill-back"></div>
+<!--education-->
+<div class="education text-center">
+    <div class="container">
+        <div class="edu-info">
+            <h3>EDUCATION</h3>
+        </div>
+        <div class="strip text-center"><img src="images/edu.png" alt=" "></div>
+        <div class="edu-grids">
+            <div class="col-md-4 edu-grid">
+                <p>2011 - 2015</p><span>Graduated</span>
+                <img src="images/arrow.png" alt="">
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>BACHELOR OF ENGINEERING</h3>
+                        <h4>Anna University</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>Computer Science from Sona College with CGPA of 8.1 out of 10. </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 edu-grid">
+                <p>2009 - 2011</p><span>Graduated</span>
+                <img src="images/arrow.png" alt="">
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>HSC</h3>
+                        <h4>State Board of Tamilnadu</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>
+                            HSC from Senguthar MahaJana Hr. Sec. School with 89.4%.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 edu-grid">
+                <p>2008 - 2009</p><span>Graduated</span>
+                <img src="images/arrow.png" alt="">
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>SSLC</h3>
+                        <h4>State Board of Tamilnadu</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>
+                            SSLC from PA Government Hr.Sec School with 92%.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+</div>
+<!--//education-->
+<div class="strip-border"><p></p></div>
+<!--work-->
+<div class="work-experience text-center">
+
+    <div class="container">
+        <div class="work-info">
+            <h3>WORK EXPERIENCE</h3>
+        </div>
+        <div class="strip text-center"><img src="images/work.png" alt=" "></div>
+        <div class="work-grids">
+            <div class="col-md-4 w-grid">
+                <div class="work-grid">
+                    <h3>2021 - PRESENT</h3>
+                    <div class="work-grid-info">
+                        <h4>Tech Mahindra</h4>
+                        <h5>Tech Lead</h5>
+                        <p>Design and development of network management tool, that manages 1.5 Million devices across countries.
+                            Responsible for leading the development team, primarily focusing on the performance monitoring system.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 w-grid">
+                <div class="work-grid">
+                    <h3>2019 - 2021</h3>
+                    <div class="work-grid-info">
+                        <h4>L&amp;T Infotech</h4>
+                        <h5>Senior Software Engineer</h5>
+                        <p>Designs, creates, and delivers routine to moderately complex
+                            program specifications for card payment domain. Responsible for creating
+                            RESTful api for given requirements.(JAVA, Spring Boot, Openshift)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 w-grid">
+                <div class="work-grid">
+                    <h3>2015 - 2019</h3>
+                    <div class="work-grid-info">
+                        <h4>Infoview Technologies</h4>
+                        <h5>Software Engineer</h5>
+                        <p>Analyzing the functional business requirements.
+                            Designed and Developed application involving batch process with large user utility,
+                            involving recursive DB hit operations with high speed responses (Java, Cassandra).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//work-->
+<div class="services-back"></div>
+
+<!--services-->
+<div class="services text-center" id="services">
+    <div class="container">
+        <div class="ser-info">
+            <h3>SERVICES</h3>
+        </div>
+        <div class="strip text-center"><img src="images/ser.png" alt=" "></div>
+        <div class="ser-grids">
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imagea"></div>
+                <h3>Java Development</h3>
+                <p></p>
+            </div>
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imageb"></div>
+                <h3>Cloud Technologies</h3>
+                <p></p>
+            </div>
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imagec"></div>
+                <h3>Web Designing</h3>
+                <p></p>
+            </div>
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imaged"></div>
+                <h3>Problem Solving</h3>
+                <p></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//services-->
+
+<!-- <div class="contact-back"></div> -->
+<!--process-->
+<div class="process text-center">
+    <div class="container">
+        <h3>PROCESS</h3>
+        <div class="strip text-center"><img src="images/pro.png" alt=" "></div>
+        <div class="process-girds">
+            <div class="col-md-2 process-pad">
+                <div class="process-gird">
+                    <div class="process-imagea"></div>
+                    <p>IDEA</p>
+                    <img src="images/6.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 process-pad">
+                <div class="process-gird">
+                    <div class="process-imageb"></div>
+                    <p>CONCEPT</p>
+                    <img class="pro-imga" src="images/6.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 process-pad">
+                <div class="process-gird">
+                    <div class="process-imagec"></div>
+                    <p>DESIGN</p>
+                    <img class="pro-img" src="images/6.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 process-pad">
+                <div class="process-gird">
+                    <div class="process-imaged"></div>
+                    <p>DEVELOP</p>
+                    <img class="pro-imgb" src="images/6.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 process-pad">
+                <div class="process-gird">
+                    <div class="process-imagee"></div>
+                    <p>TEST</p>
+                    <img src="images/6.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 process-pad">
+                <div class="process-gird">
+                    <div class="process-imagef"></div>
+                    <p>LAUNCH</p>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//process-->
+<div class="process-back"></div>
+<!--testimonials-->
+<div class="testimonials" id="testimonial">
+    <div class="container">
+        <h3>TESTIMONIAL</h3>
+        <div class="strip text-center"><img src="images/test.png" alt=" "></div>
+        <!-- responsiveslides -->
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+             // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+            $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+                }
+                });
+                });
+        </script>
+        <!-- responsiveslides -->
+        <div id="top" class="callbacks_container">
+            <ul class="rslides callbacks callbacks1" id="slider3">
+                <li id="callbacks1_s0" class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
+                    <div class="test-banner">
+                        <img class="quoa" src="images/quo2.png" alt="">
+                        <div class="test-left">
+                            <img src="images/apj.png" alt="">
+                        </div>
+                        <div class="test-right">
+                            <p>If you want to shine like a sun,
+                                first burn like a Sun.</p>
+                            <h4>A.P.J. Abdul Kalam</h4>
+                        </div>
+                        <div class="clearfix"></div>
+                        <img class="quo" src="images/quo1.png" alt="">
+                    </div>
+                </li>
+                <li id="callbacks1_s1" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
+                    <div class="test-banner">
+                        <img class="quoa" src="images/quo2.png" alt="">
+                        <div class="test-left">
+                            <img src="images/einstein.png" alt="">
+                        </div>
+                        <div class="test-right">
+                            <p>A person who never made a mistake never tried anything new.</p>
+                            <h4>Albert Einstein</h4>
+                        </div>
+                        <div class="clearfix"></div>
+                        <img class="quo" src="images/quo1.png" alt="">
+                    </div>
+                </li>
+            </ul><a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a>
+        </div>
+
+    </div>
+</div>
+<!--testimonials-->
+
+<!-- <div class="contact-back"></div> -->
+<!--contact-->
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="contact-info text-center">
+            <h3>CONTACT</h3>
+            <div class="strip text-center"><img src="images/con1.png" alt=" "></div>
+        </div>
+        <div class="contact-grids">
+            <div class="col-md-5 contact-left">
+                <h3>Say Hi to Me</h3>
+                <div class="stripb"></div>
+                <ul>
+                    <li>Bangalore </li>
+                    <li>Karnataka, India</li>
+                    <li>+91 95972 14477</li>
+                    <li><a href="mailto:mail@sukumarc.com">mail@sukumarc.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-7 contact-right">
+                <h3>Drop Me A Line</h3>
+                <div class="stripb"></div>
+                <form href="#" action="#" method="post">
+                    <input type="text" value="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                    <input type="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
+                    <textarea type="text" value="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//contact-->
+<div class="footer-top"></div>
+<!--resume-->
+<div class="resume text-center">
+    <div class="container">
+        <div class="strip text-center"><a href="#"><img src="images/down.png" alt=" "></a></div>
+        <div class="down"><a href="#">Download My Resume</a></div>
+    </div>
+</div>
+<!--//resume-->
+
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <p>Copyright © by <a href="https://www.sukumarc.com/"> Sukumar Chandrasekaran</a></p>
+    </div>
+</div>
+<!--//footer-->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+</script>
+<!-- //here ends scrolling icon -->
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;021f099189cf4f6a8747a28825e09dfe&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+<a href="#" id="toTop" style="display: inline;"><span id="toTopHover"></span>To Top</a></body>
+</body>
+</html>
