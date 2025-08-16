@@ -261,50 +261,6 @@ width: 300px;        /* Set desired width */
 }
 
 
-.container1 {
-        width: 716px;
-        padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-            display: block;
-    }
-    .strip {
-        margin: 15px 0 0px 0;
-    }
-}
-    .work-grid-info {
-        background: #ffffff;
-        padding: 20px 18px;
-    }
-
-.work-experience {
-    padding: 60px 0;
-    background: #eeeeee;
-}
-.work-grid h3 {
-        padding: 11px 0;
-        font-size: 16px;
-    }
-  .work-grid-info h4 {
-        font-size: 18px;
-    }
-
-        .work-grid-info p {
-            font-size: 16px;
-            font-family: 'Lato', sans-serif;
-                line-height: 1.8em;
-                margin: 0;
-                font-size: 18px;
-                color: #888b90;
-                font-weight: 300;
-        }
-       .col-md-4 w-grid {
-            position: relative;
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
 /* Recommendations */
 
 .all_recommendations {
@@ -439,4 +395,37 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+.education {
+  margin: 24px 0;
+}
+
+.college {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 8px;
+  margin-left: 100px;
+}
+
+.college-logo {
+  width: 100px;      /* Adjust size as needed */
+  height: 100px;
+  border-radius: 8px; /* Optional: rounded corners */
+  object-fit: contain;
+  background: #fff;   /* Optional: white background */
+}
+
+.college-name {
+  font-weight: bold;
+  font-size: 2.2em;
+  color: #222;        /* Change color as per theme */
+}
+
+.degree {
+  display: block;
+    margin-left: 0; /* optional: reset any margin */
+    color: #555;
+    font-size: 1em;
 }
